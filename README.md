@@ -73,4 +73,20 @@ curl -L -O https://download.elastic.co/beats/filebeat/filebeat_1.2.2_amd64.deb
 sudo dpkg -i filebeat_1.2.2_amd64.deb
 ```
 
+#####3
+######logstash plugins
+list all logstash plugins:
+```
+/opt/logstash/bin/logstash-plugin list
+```
+sort by group
+```
+/opt/logstash/bin/logstash-plugin list --group output
+```
 
+######plugin
+data types
+codec
+```
+codec => "json"
+```
